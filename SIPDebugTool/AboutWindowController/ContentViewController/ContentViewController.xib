@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ContentViewController">
+            <connections>
+                <outlet property="showPeotryField" destination="Pit-ZM-LBA" id="wfq-sV-J8w"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="438"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-P8-N9b">
+                    <rect key="frame" x="9" y="40" width="364" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="zWe-hy-ZNE"/>
+                    </constraints>
+                    <textFieldCell key="cell" selectable="YES" enabled="NO" alignment="center" id="RPI-T7-idh">
+                        <font key="font" metaFont="systemUltraLight" size="12"/>
+                        <string key="title">v1.0.1
+Weidong Cao
+BU22 TE Software Team
+2020.05.20</string>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Pit-ZM-LBA">
+                    <rect key="frame" x="60" y="148" width="263" height="109"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="NEO-zS-kCn"/>
+                    </constraints>
+                    <textFieldCell key="cell" selectable="YES" enabled="NO" alignment="center" id="Hkt-eS-Zom">
+                        <font key="font" size="14" name=".SFNSText-Light"/>
+                        <string key="title">云想衣裳花想容，
+春风拂槛露华浓。
+若非群玉山头见，
+会向瑶台月下逢。</string>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Jl-Gw-QeS">
+                    <rect key="frame" x="33" y="10" width="312" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2020 Luxshare-ICT All rights reserved." id="B9X-kO-ACs">
+                        <font key="font" metaFont="systemUltraLight" size="13"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ujk-2B-abT">
+                    <rect key="frame" x="149" y="328" width="81" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="htz-bs-K1U"/>
+                        <constraint firstAttribute="height" constant="66" id="qvt-qi-Kyo"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="smart_watch" id="ybB-NG-5Fw"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xmg-PP-wxz">
+                    <rect key="frame" x="123" y="305" width="133" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="iY8-eY-azX"/>
+                        <constraint firstAttribute="width" constant="129" id="z7n-ay-kUf"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="SIP Debug Tool" id="U3H-ef-VA9">
+                        <font key="font" metaFont="systemThin" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ujk-2B-abT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="44" id="3bK-iS-A9x"/>
+                <constraint firstItem="hwH-P8-N9b" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="85G-b1-SdM"/>
+                <constraint firstItem="Xmg-PP-wxz" firstAttribute="centerX" secondItem="Pit-ZM-LBA" secondAttribute="centerX" constant="-2" id="GIS-KD-lWQ"/>
+                <constraint firstItem="Xmg-PP-wxz" firstAttribute="top" secondItem="ujk-2B-abT" secondAttribute="bottom" constant="1" id="JLm-KP-s4d"/>
+                <constraint firstItem="Pit-ZM-LBA" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="62" id="JnV-tw-2kf"/>
+                <constraint firstItem="hwH-P8-N9b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="11" id="QHf-fa-pnU"/>
+                <constraint firstItem="hwH-P8-N9b" firstAttribute="top" secondItem="Pit-ZM-LBA" secondAttribute="bottom" constant="43" id="Wi3-2R-q1b"/>
+                <constraint firstItem="3Jl-Gw-QeS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="35" id="d3O-bS-uOh"/>
+                <constraint firstItem="ujk-2B-abT" firstAttribute="centerX" secondItem="3Jl-Gw-QeS" secondAttribute="centerX" id="kEv-81-YXn"/>
+                <constraint firstItem="Pit-ZM-LBA" firstAttribute="centerX" secondItem="hwH-P8-N9b" secondAttribute="centerX" id="qqR-8f-Vce"/>
+                <constraint firstItem="3Jl-Gw-QeS" firstAttribute="top" secondItem="hwH-P8-N9b" secondAttribute="bottom" constant="14" id="qsJ-kh-iKG"/>
+                <constraint firstItem="Pit-ZM-LBA" firstAttribute="top" secondItem="Xmg-PP-wxz" secondAttribute="bottom" constant="48" id="xkB-Mh-Yp6"/>
+            </constraints>
+            <point key="canvasLocation" x="150.5" y="248"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="smart_watch" width="256" height="256"/>
+    </resources>
+</document>

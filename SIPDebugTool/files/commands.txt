@@ -1,0 +1,336 @@
+audioparam --block leap --get --param firmware_version
+audioreg --block hallsensor --read --addr 0x00
+audioreg --block hallsensor --read --addr 0x01
+audioreg --block hallsensor --read --addr 0x1A -l 10
+audioreg --block hallsensor --read --addr 0x1A -l 8
+audioreg --block hallsensor --read --addr 0xB3
+audioreg -b codec -r -a -0x7ffe
+audioreg -b codec -r -a -0x7fff
+audioreg -b codec -r -a 0x2000
+audioreg -b codec -r -a 0x2001
+audioreg -b codec -r -a 0x2002
+audioreg -b codec -r -a 0x2055
+audioreg -b codec -r -a 0x2283
+audioreg -b codec -r -a 0x2348
+audioreg -b codec -r -a 0x2424
+audioreg -b codec -r -a 0x7ffe
+audioreg -b codec -r -a 0x7fff
+audioreg -b codec -r -a 0x90
+audioreg -b codec -r -a 0x91
+base -p
+baseband -p
+bbon
+blockdevice
+bluetooth --send_cmd ver
+boardid
+boardrev
+bootcfg
+c26 exec getadc all
+c26 get all
+c26 get conn_state
+c26 get die_temp
+c26 get firmware_version
+c26 get gpio4
+c26 get headroom
+c26 get pp1v8
+c26 get status
+c26 get vbat_sns
+c26 get vrect_low_res
+c26 read
+c26 read 0xF0000008
+c26 read 0xF0000230
+c26 read 0xF0000234
+c26 read 0xF000023C
+c26 read 0xF000024C
+c26 read 0xF0000258
+c26 read 0xF000025C
+c26 read 0xF0000260
+c26 read 0xF000081C
+c26 read 0xF0000900
+c26 read 0xF0000C2C
+c26 read 0xF0000E10
+c26 read 0xF0000E14
+c26 read 0xf0000000
+c26 read 0xf000002c
+cbread 0x00
+cbread 0x03
+cbread 0x04
+cbread 0x05
+cbread 0x06
+cbread 0x13
+cbread 0x15
+cbread 0x16
+cbread 0x17
+cbread 0x18
+cbread 0x1A
+cbread 0x20
+cbread 0x2E
+cbread 0x2d
+cbread 0x79
+chipid
+dev -k gasgauge -p
+display -l
+displayid
+erbium_fom_output.log
+hid --select platinum;hid --get_report 0xA0;sensor -s platinum --get
+i2c -r 5 0x48 2
+i2c -s 0
+i2c -s 0; i2c -s 1; i2c -s 2; i2c -s 3; i2c -s 4
+i2c -s 0; i2c -s 1; i2c -s 3; i2c -s 4
+i2c -s 1
+i2c -s 1;
+i2c -s 2
+i2c -s 3
+i2c -s 3;
+i2c -s 4
+i2c -s 5
+i2c -s 6
+i2c -s 7
+i2c -s 8
+measureclock --cpu
+measureclock --gpu
+memrw --32 --count 1 0x4c1c5024
+memrw --32 0x25000c020
+memrw --32 0x25000c024
+memrw --32 0x25000c028
+memrw --32 0x25000c02c
+memrw --32 0x43600014
+mipi -r 0x14 0xb1
+na_hpf_breadcrumbs.lua
+nandcsid
+nandppnfwver
+nanduid
+nanduid; # die0
+nanduid; # die1
+nvram --get auto-boot
+nvram --get boot-args
+nvram --get boot-command
+pmuadc --read all
+pmuadc --read all --nocal
+pmuadc --read appmux_gpio11
+pmuadc --read appmux_gpio13
+pmuadc --read appmux_gpio15
+pmuadc --read appmux_gpio16
+pmuadc --read appmux_gpio17
+pmuadc --read appmux_gpio21
+pmuadc --read appmux_in2
+pmuadc --read appmux_in3
+pmuadc --read appmux_in4
+pmuadc --read appmux_in5
+pmuadc --read appmux_in6
+pmuadc --read appmux_sw4_out
+pmuadc --read appmux_vldo0
+pmuadc --read appmux_vldo10
+pmuadc --read appmux_vldo2
+pmuadc --read bubo_sw6
+pmuadc --read buck9
+pmuadc --read chg_hr
+pmuadc --read chg_hr --avg 8
+pmuadc --read ibubo --avg 10
+pmuadc --read ibuck2 --avg 10
+pmuadc --read ibuck3 --avg 10
+pmuadc --read ibuck3 --avg 100
+pmuadc --read ibuck3 --avg 1000
+pmuadc --read ich
+pmuadc --read ildo6 --avg 10
+pmuadc --read ldo0
+pmuadc --read ldo2
+pmuadc --read ldo3
+pmuadc --read ldo8
+pmuadc --read ldo9
+pmuadc --read sw6
+pmuadc --read tbat
+pmuadc --read temp2
+pmuadc --read temp3
+pmuadc --read vbat
+pmuadc --read vddout
+pmuadc --read vrtc
+pmureg -r 0 0x0000 3
+pmureg -r 0 0x0004 7
+pmureg -r 0 0x0606
+pmureg -r 0 0x0609
+pmureg -r 0 0x1204 7
+pmureg -r 0 0x1606
+pmureg -r 0 0x1609
+pmureg -r 0 0x160B
+pmureg -r 0 0x1A0A
+pmureg -r 0 0x7055
+pmureg -r 0 0x7056
+pmureg -r 0 0x70c0 3
+pmureg -r 0 0x70ca 5
+pmureg -r 0 0x780A 1
+pmurw -r 0x1307 0x01
+pmurw -r 0x1A01 0x01
+pmurw -r 0x1A04
+pmurw -r 0x1A07 0x01
+pmurw -r 0x1A0A
+pmurw -r 0x1A0E
+pmurw -r 0x1A10
+pmurw -r 0x1A11
+pmurw -r 0x1A12
+pmurw -r 0x1A13
+pmurw -r 0x3011
+pmurw -r 0x402C
+pmurw -r 0x402f
+pmurw -r 0x4030
+pmustat btn
+processaudio --pick fft --in process0 --options "--windowType flat_top"
+processaudio --pick fft --inbufs looprx0
+processaudio --pick rms --inbufs looprx0
+processaudio -p MAX98726 -i looprx0 -o "--bins 1"
+processaudio -p MAX98726 -i looprx0 -o '--bins 1'
+processaudio -p dump -i record0
+processaudio -p dump -i record0 --options "--offset 10 --len 1"
+processaudio -p dump -i record0 --options "--offset 11 --len 1"
+processaudio -p dump -i record0 --options "--offset 12 --len 1"
+processaudio -p dump -i record0 --options "--offset 13 --len 1"
+processaudio -p dump -i record0 --options "--offset 16 --len 1"
+processaudio -p dump -i record0 --options "--offset 17 --len 1"
+processaudio -p dump -i record0 --options "--offset 18 --len 1"
+processaudio -p dump -i record0 --options "--offset 19 --len 1"
+processaudio -p dump -i record0 --options "--offset 20 --len 1"
+processaudio -p dump -i record0 --options "--offset 21 --len 1"
+processaudio -p dump -i record0 --options "--offset 22 --len 1"
+processaudio -p dump -i record0 --options "--offset 23 --len 1"
+processaudio -p dump -i record0 --options "--offset 24 --len 1"
+processaudio -p dump -i record0 --options "--offset 25 --len 1"
+processaudio -p dump -i record0 --options "--offset 26 --len 1"
+processaudio -p dump -i record0 --options "--offset 27 --len 1"
+processaudio -p dump -i record0 --options "--offset 4 --len 1"
+processaudio -p dump -i record0 --options "--offset 5 --len 1"
+processaudio -p dump -i record0 --options "--offset 6 --len 1"
+processaudio -p dump -i record0 --options "--offset 7 --len 1"
+processaudio -p dump -i record0 --options "--offset 8 --len 1"
+processaudio -p dump -i record0 --options "--offset 9 --len 1"
+processaudio -p fft -i looprx0 --options "--windowType flat_top --float true --normalize false"
+processaudio -p fft -i looprx0 --options "--windowType flat_top --skipHpFilter true"
+processaudio -p fft -i looprx0 --options "--windowType flat_top"
+processaudio -p fft -i record0
+processaudio -p rms --in looprx0
+processaudio -p rms -i looprx0
+ramlog --dump;
+ramlog --dump; echo baseband_power
+ramlog --dump; echo pitaid
+sensor --listsensors
+sensor --listsensors;
+sensor --sel accel --exectest selftest
+sensor --sel accel --exectest selftest_manual
+sensor --sel accel --get
+sensor --sel accel --sample 500ms --stats
+sensor --sel accel --sample 500ms --stats --quiet
+sensor --sel accel,gyro --sample 1000ms --stats --quiet
+sensor --sel accel,gyro --sample 2000ms --stats --quiet
+sensor --sel accel,gyro --sample 500ms --stats
+sensor --sel accel,gyro --sample 500ms --stats --quiet
+sensor --sel erbium --get id
+sensor --sel erbium --get rev
+sensor --sel gyro --exectest selftest
+sensor --sel lisa --conntest
+sensor --sel lisa --exectest vac_test --testopts "--sample 8192"
+sensor --sel lisa --get fw_version
+sensor --sel lisa --sample 1024 --quiet --stats
+sensor --sel lisa --sample 16384 --quiet --stats
+sensor --sel lisa --sample 2048 --quiet --stats
+sensor --sel lisa --sample 32768 --quiet --stats
+sensor --sel lisa --sample 4096 --quiet --stats
+sensor --sel lisa --sample 65536 --quiet --stats
+sensor --sel lisa --sample 8192 --quiet --stats
+sensor --sel orb-i2c --sample 51 --stats --quiet
+sensor --sel platinum --get id
+sensor --sel platinum --get lcosc_div
+sensor --sel platinum --get rev
+sensor --sel platinum --get stats
+sensor --sel platinum -e bcm_test --testopts "--time 1000 --avg 1000 --start 1"
+sensor --sel platinum -e bcm_test --testopts "--time 500 --avg 500 --start 1"
+sensor --sel platinum -e test_clock
+sensor --sel pressure --sample 1000ms --stats
+sensor --sel pressure --sample 1000ms --stats --quiet
+sensor --sel pressure --sample 4000ms --stats
+sensor --sel pressure-fct --sample 1000ms --stats --quiet
+sensor --sel touch --sample 51 --stats --quiet
+sensor -s compass -n; sensor --sel compass --sample 1s --stats --quiet
+sensor -s gyro --exectest drive_freq_measurement
+sensor -s platinum --set hr_iled "0xC8 0xC8 0xC8 0xC8 0xC8 0xC8 0xC8 0xC8"
+sensor -s platinum --set hr_led "5 5 5 5 5 5 5 5"
+sensor -s platinum -e bcm_test
+sensor -s platinum -e bcm_test --testopts "--time 20000"
+sensor -s platinum -e bcm_test --testopts "--time 20000"; wait 10
+sensorreg --sel lisa --read 0x00
+sensorreg --sel platinum --read 0x2C
+sensorreg --sel platinum --read 0xD0 10
+sensorreg --sel platinum --read 0xD1
+sensorreg --sel platinum --read 0xD8 2
+sensorreg --sel platinum --read 0xE3
+sensorreg --sel platinum --read 0xF0
+sensorreg -s accel --read 0x02
+sensorreg -s sodium --read 0x00 0x01
+sep --tty "ks sik"; wait 1000; sep -c
+sep -e lynx lynd
+signal --process
+smokey --run OrbTest
+smokey --run OrbTest --clean
+smokey --run OrbTest LogBehavior=ConsoleOnly ResultsBehavior=NoFile
+smokey GraphiteSPI LogBehavior=ConsoleOnly ResultsBehavior=NoFile --run
+smokey GyroQuadShift --clean --run
+smokey GyroQuadShift LogBehavior=ConsoleOnly ResultsBehavior=NoFile --run
+smokey HeliumI2C LogBehavior=ConsoleOnly ResultsBehavior=NoFile --run
+smokey MotionStress --clean --run --test PerfGyro --test WhoAmI
+smokey MotionStress LogBehavior=ConsoleOnly ResultsBehavior=NoFile --run --test PerfGyro --test WhoAmI
+smokeyshell -e 'FCT_CHECK("BB_DFU",res)'
+smokeyshell -e 'FCT_CHECK("BB_SMTQT",res)'
+smokeyshell -e 'FCT_CHECK("SH_DFU",res)'
+smokeyshell -e 'FCT_CHECK("WL_DFU",res)'
+smokeyshell -f Pttrim_cal.lua {{pt_test_clk_precal}} {{pt_lcosc_div_precal}}
+soc -p
+soc -p get-perf-state
+soc -p list-soc-bin-data
+socgpio --port 0 --pin 13 --get
+socgpio --port 0 --pin 89 --get
+socgpio --port 1 --pin 54 --get
+socgpio --port 1 --pin 95 --get
+spi -t 0 2 0x81
+syscfg print ACAL
+syscfg print BMac
+syscfg print CCal
+syscfg print CFG#
+syscfg print EMac
+syscfg print ErCp
+syscfg print ErHC
+syscfg print MLB#
+syscfg print MLB#; syscfg print CFG#
+syscfg print PACV
+syscfg print PCVB
+syscfg print PtOC
+syscfg print TCOC
+syscfg print WMac
+syscfg print WSKU
+temperature --all
+temperature --dev pmu
+temperature --dev soc
+tristar -p
+vbat
+version
+version; boardrev; boardid; chipid; blockdevice
+wait 500; sep --tty "ks sik"; wait 1000; sep -c
+wifi --send_cmd ccgpioin
+wifi -p
+thermalmonitor --off; sep --init
+tristar --wr_hostid 0x4
+tristar --rd_hostid 0x4
+pmugpio --pin 21 --output 1 --pushpull --source vdd
+syscfg init; cbinit
+pmugpio --pin 3 --get; tristar -r '0x0d'; pmugpio --pin 3 --get
+syscfg delete SrNm; syscfg delete WMac; syscfg delete BMac; syscfg delete EMac
+syscfg addbyte WMac f4 86 5f c3 3b 1a; syscfg addbyte BMac f4 86 5f c3 3a 1a; syscfg addbyte EMac 00 00 00 00 00 00
+event -s enter-bg-quiesce; wait 50
+event -s leave-bg-quiesce
+soc -s "perfstate cpu 2"
+soc -s "perfstate soc 2"
+soc -s "perfstate dcs 2"
+soc -p get-perf-state
+bluetooth --on
+bluetooth --off
+shutdown
+nvram --set boot-command diags; nvram --set auto-boot true
+nvram --set boot-args debug=0x14e serial=3 amfi_allow_any_signature=1 cs_enforcement_disable=1 amfi_unrestrict_task_for_pid=1 no-dockfifo-uart=1
+nvram --save
