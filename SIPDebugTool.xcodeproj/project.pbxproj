@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D238C3024C0469000FE4632 /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D238C2F24C0469000FE4632 /* MyTextView.m */; };
 		9D8601AF24750DF200690B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8601AE24750DF200690B88 /* AppDelegate.m */; };
 		9D8601B124750DF300690B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8601B024750DF300690B88 /* Assets.xcassets */; };
 		9D8601B424750DF300690B88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8601B224750DF300690B88 /* MainMenu.xib */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D238C2E24C0469000FE4632 /* MyTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
+		9D238C2F24C0469000FE4632 /* MyTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
 		9D8601AA24750DF200690B88 /* SIPDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8601AD24750DF200690B88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D8601AE24750DF200690B88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D238C2D24C0467200FE4632 /* MyTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9D238C2E24C0469000FE4632 /* MyTextView.h */,
+				9D238C2F24C0469000FE4632 /* MyTextView.m */,
+			);
+			path = MyTextView;
+			sourceTree = "<group>";
+		};
 		9D8601A124750DF200690B88 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		9D8601BE2475114E00690B88 /* PanelViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9D238C2D24C0467200FE4632 /* MyTextView */,
 				9D8601C62475224C00690B88 /* MyTableView */,
 				9D8601BF2475116C00690B88 /* PanelViewController.h */,
 				9D8601C02475116C00690B88 /* PanelViewController.m */,
@@ -248,6 +261,7 @@
 				9D8601D72475483000690B88 /* ORSSerialPacketDescriptor.m in Sources */,
 				9D8601DA2475483000690B88 /* ORSSerialPortManager.m in Sources */,
 				9D8601DB2475483000690B88 /* ORSSerialPort.m in Sources */,
+				9D238C3024C0469000FE4632 /* MyTextView.m in Sources */,
 				9D8601C22475116C00690B88 /* PanelViewController.m in Sources */,
 				9D8601AF24750DF200690B88 /* AppDelegate.m in Sources */,
 			);
